@@ -1,3 +1,14 @@
+La tecnología avanza rápidamente, transformando la manera en que las personas se comunican, trabajan y aprenden. Cada día surgen nuevas herramientas que facilitan la vida cotidiana y abren oportunidades para el desarrollo personal y profesional.
+La tecnología avanza rápidamente, transformando la manera en que las personas se comunican, trabajan y aprenden. Cada día surgen nuevas herramientas que facilitan la vida cotidiana y abren oportunidades para el desarrollo personal y profesional.
+La tecnología avanza rápidamente, transformando la manera en que las personas se comunican, trabajan y aprenden. Cada día surgen nuevas herramientas que facilitan la vida cotidiana y abren oportunidades para el desarrollo personal y profesional.
+La tecnología avanza rápidamente, transformando la manera en que las personas se comunican, trabajan y aprenden. Cada día surgen nuevas herramientas que facilitan la vida cotidiana y abren oportunidades para el desarrollo personal y profesional.
+La tecnología avanza rápidamente, transformando la manera en que las personas se comunican, trabajan y aprenden. Cada día surgen nuevas herramientas que facilitan la vida cotidiana y abren oportunidades para el desarrollo personal y profesional.
+La tecnología avanza rápidamente, transformando la manera en que las personas se comunican, trabajan y aprenden. Cada día surgen nuevas herramientas que facilitan la vida cotidiana y abren oportunidades para el desarrollo personal y profesional.
+
+
+
+
+
 TERCERA PRUEBA HACIENDO
 git add -A
 git commit -m "add evidence"

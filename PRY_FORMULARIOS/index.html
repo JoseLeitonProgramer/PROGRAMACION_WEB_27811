@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INTRODUCCION A LOS FORMULARIOS
+    </title>
+</head>
+<body>
+
+    <!-- post-> datos seguros -->
+    <!-- get-> datos no seguros -->
+     
+    <!-- input -->
+    <!-- id,name,value,placeholder,required,maxlenght,readonly,disabled -->
+
+    <!-- min,max,step -->
+    
+    <header>
+        <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+        <!-- FORM -->
+        <form action="server.html" method="get">
+
+            <!-- TEXT -->
+            <label for="apellido">INGRESE SU APELLIDO:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ejm. LEITON" maxlength="5" minlength="3">
+            <br><br>
+            <!-- TEXT -->
+            <label for="nombre">INGRESE SU NOMBRE:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ejm. JOSE" maxlength="5" minlength="3">
+            <br><br>
+            <!-- NUMBER -->
+            <label for="edad">INGRESE SU EDAD:</label>
+            <input type="number" name="edad" id="edad" min="18" max="70" step="1" placeholder="Ejm. 25">
+            <br><br>
+            <!-- EMAIL -->
+            <label for="email">INGRESE SU EMAIL:</label>
+            <input type="email" name="email" id="email" placeholder="Ejm. jileit@hotmail.com">
+            <br><br>
+            <!-- DATE -->
+            <label for="fecha">INGRESE SU FECHA DE NACIMIENTO:</label>
+            <input type="date" name="fecha_nacimiento" id="fecha" placeholder="26/03/2002" value="2025-03-20" max="2025-10-22" min="2025-01-01">
+            <br><br>
+            <!-- RADIO -->
+            <label for="">SELECCIONE SU SEXO:</label>
+            <label for="hombre">HOMBRE</label>
+            <input type="radio" name="sexo" id="hombre" value="HOMBRE" checked>
+            <label for="mujer">MUJER</label>
+            <input type="radio" name="sexo" id="mujer" value="MUJER">
+            <label for="otro">OTRO</label>
+            <input type="radio" name="sexo" id="otro" value="OTRO" disabled>
+            <br><br>
+            <!-- CHECKBOX -->
+            <label for="">SELECCIONE SUS DIAS DE CLASE DE PROGRAMACION WEB:</label>
+            <label for="lunes">LUNES</label>
+            <input type="checkbox" name="dias[]" id="lunes">
+            <label for="martes">MARTES</label>
+            <input type="checkbox" name="dias[]" id="martes">
+            <label for="miercoles">MIERCOLES</label>
+            <input type="checkbox" name="dias[]" id="miercoles">
+            <label for="jueves">JUEVES</label>
+            <input type="checkbox" name="dias[]" id="jueves">
+            <label for="viernes">VIERNES</label>
+            <input type="checkbox" name="dias[]" id="viernes">
+            <br><br>
+            <!-- FILE -->
+            <label for="foto">SUBA SU FOTO PERFIL</label>
+            <input type="file" name="foto" id="foto" accept=".png, .jpg, .jpeg">
+            <br><br>
+            <!-- COLOR -->
+            <label for="color">SELECCIONE SU COLOR FAVORITO:</label>
+            <input type="color" name="color" id="color" value="#ff0000">
+            <br><br>
+            <!-- RANGE -->
+            <label for="estatura">SELECCIONE SU ESTATURA:</label>
+            <input type="range" name="estatura" id="estatura" min="1.50" max="2.00" step="0.01" value="1.75">
+            <br><br>
+            <!-- SEARCH -->
+            <label for="busqueda">BUSCAR POR CEDULA</label>
+            <input type="search" name="busqueda" id="busqueda" placeholder="1720020112">
+            <br><br>
+            <!-- RESET -->
+            <label for="vaciar">VACIAR FORMULARIO</label>
+            <input type="reset" name="vaciar" id="vaciar" value="Restablecer">
+            <br><br>
+            <!-- PASSWORD -->
+            <label for="clave">INGRESE SU CLAVE:</label>
+            <input type="password" name="clave" id="clave" placeholder="********">
+            <br><br>
+            <!-- SUBMIT -->
+            <input type="submit" name="enviar" id="enviar" value="ENVIAR DATOS AL SERVER">
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>

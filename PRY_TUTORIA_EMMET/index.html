@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        TUTORIAS TABLES EMMETT
+    </title>
+</head>
+<body>
+    <header>
+        <h1>TUTORIAS TABLES EMMETT</h1>
+    </header>
+    <main>
+
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">NOMBRE</th>
+                    <th rowspan="2">APELLIDO</th>
+                    <th colspan="4">NOTAS</th>
+                </tr>
+                <tr>
+                    <td>N1</td>
+                    <td>N2</td>
+                    <td>N3</td>
+                    <td>TOTAL</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+
+                (tr>td{col}*7)*10
+
+                
+
+            </tbody>
+
+            tfoot>(tr>(td{col}*3)+(td{N1})+(td{N2})+(td{N3})+(td{TOTAL}))+tr>(th[rowspan="2"]{ID})+(th[rowspan="2"]{NOMBRE})+(th[rowspan="2"]{APELLIDO})+(th[colspan="4" rowspan="2"]{NOTAS})
+            
+        </table>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CONDOM SYSTEM
+    </title>
+</head>
+<body>
+    <header>
+        <h1>Condominio La Primavera</h1>
+        <h2>Recolección de datos</h2>
+    </header>
+    <main>
+        <form action="formulario.html" method="post">
+            <fieldset>
+                <legend>Información básica</legend>
+                <label for="primerNombre">Primer nombre: </label>
+                <input type="text" name="primerNombre" id="primerNombre" placeholder="JOSE" required>
+                <label for="segundoNombre">Segundo nombre:</label>
+                <input type="text" name="segundoNombre" id="segundoNombre" placeholder="IGNACIO" required>
+                <hr>
+                <label for="primerApellido">Primer apellido:</label>
+                <input type="text" name="primerApellido" id="primerApellido" placeholder="LEITON" required>
+                <label for="segundoApellido">Segundo apellido:</label>
+                <input type="text" name="segundoApellido" id="segundoApellido" placeholder="HARO" required>
+                <hr>
+                <label for="cedula">Cédula:</label>
+                <input type="text" name="cedula" id="cedula" placeholder="1720020112" required maxlength="10" minlength="10">
+                <hr>
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" value="2000-03-26">
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" placeholder="25" min="18" max="80" required>
+                <hr>
+                <label for="">Sexo:</label>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="femenino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="sexo" id="otro">
+                <label for="otro">Otro</label>
+                <hr>
+                <label for="peso">Peso (kg): </label>
+                <input type="number" name="peso" id="peso" placeholder="75" step="1" max="100" min="20">
+                <label for="altura">Altura (cm): </label>
+                <input type="number" name="altura" id="altura" placeholder="173" step="1" max="200" min="150">
+                <hr>
+            </fieldset>
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" name="telefono" id="telefono" placeholder="0979357401" maxlength="10" minlength="10" required>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="jileit@hotmail.com" required>
+                <hr>
+                <label for="pais">Pais: </label>
+                <input type="text" name="pais" id="pais" placeholder="ECUADOR" required>
+                <label for="provincia">Provincia:</label>
+                <input type="text" name="provincia" id="provincia" placeholder="QUITO" required>
+                <hr>
+                <label for="sector">Sector:</label>
+                <input type="text" name="sector" id="sector" placeholder="LAS CASAS" required>
+                <hr>
+                <label for="calle1">Calle 1:</label>
+                <input type="text" name="calle1" id="calle2" placeholder="La Primavera" required>
+                <label for="calle2">Calle 2:</label>
+                <input type="text" name="calle2" id="calle2" placeholder="Gaetana Sterni" required>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

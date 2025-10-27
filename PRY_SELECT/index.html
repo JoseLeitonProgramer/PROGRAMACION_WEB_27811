@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SELECT
+    </title>
+</head>
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIO</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <!-- <input type="submit" value="ENVIAR AL SERVIDOR"> -->
+            
+            <!-- selec para form -->
+            <fieldset>
+                <label for="lenguaje_programacion">Seleccione su lenguaje de programacion favorito:</label>
+                    <select name="lenguaje_programacion" id="lenguaje_programacion">
+                        <option value="python">PYTHON</option>
+                        <option value="c_mas_mas">C++</option>
+                        <option value="j_script">JAVA SCRIPT</option>
+                        <option value="java" disabled>JAVA</option>
+                    </select>
+            </fieldset>
+            
+            <br>
+
+            <fieldset>
+                <select name="musica[]" id="musica" multiple required size="10" autofocus>
+                    <optgroup title="regueton1" label="REGUETON1">
+                        <option value="musica_a">MUSICA 1</option>
+                        <option value="musica_b">MUSICA 2</option>
+                        <option value="musica_c">MUSICA 3</option>
+                        <option value="musica_d">MUSICA 4</option>
+                    </optgroup>
+                    <optgroup title="regueton2" label="REGUETON2">
+                        <option value="musica_a">MUSICA 1</option>
+                        <option value="musica_b">MUSICA 2</option>
+                        <option value="musica_c">MUSICA 3</option>
+                        <option value="musica_d">MUSICA 4</option>
+                    </optgroup>
+                    <optgroup title="regueton3" label="REGUETON3">
+                        <option value="musica_a">MUSICA 1</option>
+                        <option value="musica_b">MUSICA 2</option>
+                        <option value="musica_c">MUSICA 3</option>
+                        <option value="musica_d">MUSICA 4</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <label for="musica">Seleccione música favorita</label>
+            
+            <br>
+
+            <!-- textArea para form -->
+            <label for="frase_motivadora">Ingrese frase motivadora: </label>
+            <textarea name="frase_motivadora" id="frase_motivadora" cols="100" rows="10">INGRESE SUS COMENTARIOS</textarea>
+            <br>
+
+            <!-- hidden -->
+            <input type="hidden" name="valor_enviado_sin_mostrar" value="1720020112">
+
+            <br>
+
+            <button type="submit">ENVIAR AL SERVIDOR</button>
+        </form>
+    </main>
+    <foooter>
+        
+    </foooter>
+</body>
+</html>

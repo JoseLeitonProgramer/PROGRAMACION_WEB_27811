@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+    </title>
+</head>
+<body>
+    <center>
+    <!-- CABECERA -->
+    <header>
+        <h1>REGISTRO ESTUDIANTE</h1>
+    </header>
+    <!-- CUERPO -->
+    
+    <body>
+        <form action="registro.html" method="get">
+        <fieldset>
+            <legend>INFORMACION BASICA</legend>
+
+            <label for="primerNombre">Primer nombre: </label>
+            <input type="text" name="primerNombre" id="primerNombre" placeholder="JOSE" required>
+            <br>
+            <label for="primerApellido">Primer apellido:</label>
+            <input type="text" name="primerApellido" id="primerApellido" placeholder="LEITON" required>
+            <br>
+            <label for="cedula">Cédula:</label>
+            <input type="number" name="cedula" id="cedula" placeholder="1720020112" pattern="[0-9]{10}">
+            <br>
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" value="2005-01-01" max="2010-01-01" min="2005-01-01">
+            <br>
+            <label for="hoja_vida">Suba hoja de vida:</label>
+            <input type="file" name="hoja_vida" id="hoja_vida" accept=".pdf">
+        </fieldset>
+        <fieldset>
+            <legend>ESPE MATERIAS</legend>
+            <label for="materias">Seleccione materias en las que se va a matricular:</label>
+            <select name="materias[]" id="materias" multiple required size="10" autofocus >
+                    <optgroup title="exactas" label="EXACTAS">
+                        <option value="materia1">materia 1</option>
+                        <option value="materia2">materia 2</option>
+                        <option value="materia3">materia 3</option>
+                        <option value="materia4">materia 4</option>
+                    </optgroup>
+                    <optgroup title="computacion" label="COMPUTACION">
+                        <option value="materia1">materia 1</option>
+                        <option value="materia2" disabled>materia 2</option>
+                        <option value="materia3" disabled>materia 3</option>
+                        <option value="materia4" disabled>materia 4</option>
+                    </optgroup>
+                    <optgroup title="relleno" label="RELLENO">
+                        <option value="materia1" disabled>materia 1</option>
+                        <option value="materia2" disabled>materia 2</option>
+                        <option value="materia3" disabled>materia 3</option>
+                        <option value="materia4" disabled>materia 4</option>
+                    </optgroup>
+                </select>
+        </fieldset>
+
+        <input type="text" name="id_banner" value="LMU12345" pattern="[A-Z]{3}[0-9]{5}" readonly>
+        
+        <button type="submit">ENVIAR AL SERVIDOR</button>
+        </form>
+    </body>
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <br>
+
+        TODOS LOS DERECHOS RESERVADOS JOSE LEITON 2025
+    </footer>
+    </center>
+</body>
+</html>

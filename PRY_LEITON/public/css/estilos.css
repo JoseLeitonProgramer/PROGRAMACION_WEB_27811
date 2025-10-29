@@ -1,0 +1,35 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 10%;
+    border: 2px solid;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    box-shadow: 0 5px 10px green;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    list-style: lower-alpha;
+}
+
+nav li {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: color 1s
+    transform 1s;
+}
+
+nav li:hover {
+    color: green;
+    transform: scale(1.3);
+}

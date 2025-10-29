@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Formulario Registro estudiante
+    </title>
+</head>
+<body>
+    <header>
+        <h1>REGISTRO DE ESTUDIANTES</h1>
+    </header>
+    <main>
+        <form action="datos.html" method="get">
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ejm. JOSE" maxlength="10" minlength="5" pattern="[A-Z]{5,10}">
+            <br>
+            <label for="apellido">Ingrese su nombre:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ejm. LEITON" pattern="[A-Z]{5,10}" title="Solo letras mayúsculas (5 a 10 caracteres)" required>
+            <br>
+            <label for="edad">Ingrese su edad:</label>
+            <input type="text" name="edad" id="edad" placeholder="Ejm. 25" pattern="[0-9]{1,2}" title="Solo dos dígitos">
+            <br>
+            <input type="submit" value="SUBIR DATOS">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

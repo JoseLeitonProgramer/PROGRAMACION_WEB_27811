@@ -33,3 +33,50 @@ nav li:hover {
     color: green;
     transform: scale(1.3);
 }
+
+article h2 {
+    color: #0b607a98;
+    border: 5px #700707 double;
+
+}
+
+article p.primero {
+    background: #a83131 url('/PRY_LEITON/public/img/vector-diseno-degradado-colorido-pajaro_343694-2506.jpg') repeat-x center bottom / 100px 100px;
+    opacity: 0.4;
+}
+
+article p.segundo {
+    background: #81968e ;
+    border: 10px #121169 double;
+    margin: 20px 15px 20px 15px;
+    padding: 20px 15px 20px 15px;
+
+}
+
+article p.tercero {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    text-decoration: underline;
+    text-shadow: 3px 5px 5px #421414;
+}
+
+article p.cuarto {
+
+}
+
+a:link {
+    color: aqua;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: rebeccapurple;
+}
+

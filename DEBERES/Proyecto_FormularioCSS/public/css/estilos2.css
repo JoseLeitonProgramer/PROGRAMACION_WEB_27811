@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: #001702;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 0 15px #ffffff;
+}
+
+header img {
+    width: 130px;
+    border-radius: 50%;
+    border: 5px double white;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 50px;
+    text-decoration: overline;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: 25px;
+    letter-spacing: 30px;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #000000;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0 15px #ffffff;
+}
+
+nav li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav li:hover {
+    background-color: #082c4b;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0 15px #ffffff;
+    width: 90%;
+    max-width: 900px;
+    border: 15px double #1565c0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: #1976d2;
+}
+
+thead th img {
+    border-radius: 200px;
+    width: 90%;
+}
+
+thead th.titulo {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px;
+    font-size: 44px;
+    border: 1px solid #0d47a1;
+}
+
+thead td.subtitulo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 5;
+    letter-spacing: 11px;
+}
+
+tbody th {
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+td input[type="text"], td select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0d47a1;
+    border-radius: 6px;
+}
+
+td input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #1565c0;
+    box-shadow: 0px 0 15px #0d47a1;
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 170px;
+    border-radius: 8px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    box-shadow: 0px 0 15px #ffffff;
+}
+
+footer a {
+    color: #bbdefb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-size: 25px;
+}

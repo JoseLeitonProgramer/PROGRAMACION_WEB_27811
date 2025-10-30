@@ -1,39 +1,39 @@
 * {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    background: #001702;
+    background: #121212;
     min-height: 100vh;
 }
 
 header {
-    background-color: #0d47a1;
+    background-color: #1e1e1e;
     color: white;
     text-align: center;
     padding: 20px 0;
-    box-shadow: 0px 0 15px #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 header img {
     width: 130px;
     border-radius: 50%;
-    border: 5px double white;
+    border: 5px double #00adb5;
     margin-bottom: 10px;
 }
 
 header h1 {
     font-size: 40px;
     font-weight: 50px;
-    text-decoration: overline;
+    text-decoration: none;
     letter-spacing: 2px;
 }
 
 header h2 {
     font-size: 20px;
     font-weight: 25px;
-    letter-spacing: 30px;
+    letter-spacing: 15px;
     padding: 20px;
 }
 
@@ -42,10 +42,10 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 50px;
-    background-color: #000000;
+    background-color: #252525;
     padding: 10px 0;
     border-radius: 10px;
-    box-shadow: 0px 0 15px #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav li {
@@ -55,7 +55,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: #082c4b;
+    background-color: #00adb5;
 }
 
 main {
@@ -65,20 +65,21 @@ main {
 }
 
 form {
-    background-color: #ffffff;
+    background-color: #2a2a2a;
+    color: #eeeeee;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0px 0 15px #ffffff;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.7);
     width: 90%;
     max-width: 900px;
-    border: 15px double #1565c0;
+    border: 15px double #00adb5;
     overflow-x: auto;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    border: #1976d2;
+    border: #00adb5;
     table-layout: fixed;
     word-wrap: break-word;
 }
@@ -89,11 +90,11 @@ thead th img {
 }
 
 thead th.titulo {
-    background-color: #1976d2;
+    background-color: #00adb5;
     color: white;
     padding: 10px;
     font-size: 44px;
-    border: 1px solid #0d47a1;
+    border: 1px solid #007a7f;
 }
 
 thead td.subtitulo {
@@ -104,7 +105,7 @@ thead td.subtitulo {
 }
 
 tbody th {
-    background-color: #1976d2;
+    background-color: #3e3e3e;
     color: white;
     text-align: center;
     padding: 10px;
@@ -118,13 +119,16 @@ td {
 td input[type="text"], td select, textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #0d47a1;
+    background-color: #333333;
+    color: #eeeeee;
+    border: 2px solid #555555;
     border-radius: 6px;
 }
 
 td input[type="text"]:focus, select:focus, textarea:focus {
-    border-color: #1565c0;
-    box-shadow: 0px 0 15px #0d47a1;
+    border-color: #00adb5;
+    box-shadow: 0px 0 10px rgba(0, 173, 181, 0.5);
+    outline: none;
 }
 
 tfoot th {
@@ -137,7 +141,7 @@ button {
     width: 100%;
     max-width: 300px;  
     margin: 10px auto;  
-    background-color: #1976d2;
+    background-color: #00adb5;
     color: white;
     border: none;
     padding: 12px 0;    
@@ -148,26 +152,26 @@ button {
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: #00cdd7;
     color: white;
 }
 
 
 footer {
-    background-color: #0d47a1;
+    background-color: #1e1e1e;
     color: white;
     text-align: center;
     padding: 15px;
     font-size: 20px;
-    box-shadow: 0px 0 15px #ffffff;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); /* Sombra en la parte superior */
 }
 
 footer a {
-    color: #bbdefb;
+    color: #00cdd7;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 20px;
 }

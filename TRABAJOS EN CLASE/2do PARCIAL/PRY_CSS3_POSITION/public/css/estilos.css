@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(139, 158, 42);
+}
+
+
+/* top, bottom, right, left no afecta STATIC */
+.caja_estatica{
+    position: static;
+    background-color: aqua;
+    margin: 5px;
+    padding: 5px;
+    top: 100px;
+    right: 100px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+/* top, bottom, right, left si afecta RELATIVE */
+.caja_relativa{
+    position: relative; 
+    background-color: rgb(162, 30, 167);
+    margin: 5px;
+    padding: 5px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.contenedor{
+    position: relative; 
+    background-color: greenyellow;
+    margin: 5px;
+    padding: 5px;
+    left: 150px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.caja_absoluta{
+    position: absolute;
+    background-color: azure;
+    padding: 20px;
+    top: 80px;
+    left: 300px;
+}
+
+.caja_fixed{
+    position: fixed;
+    background-color: rgb(37, 23, 189);
+    margin: 5px;
+    padding: 5px;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.whatsapp{
+    position: fixed;
+    background-color: rgba(40, 47, 179, 0.751);
+    color: rgb(208, 200, 200);
+    margin: 5px;
+    padding: 5px;
+    bottom: 20px;
+    right:  50px;
+    text-align: center;
+    border-radius: 40px;
+    font-family: -apple-system, BlinkMacSystemFont;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px 1px white;
+    padding: 12px;
+    box-shadow: 3px 3px 5px 0px white;
+}

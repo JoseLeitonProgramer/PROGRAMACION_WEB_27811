@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES BASICAS</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>OPERACIONES BASICAS</h1>
+        <a href="./temperatura.html">TEMPERATURAS</a>
+    </header>
+    <main class="container">
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-sm-3">
+                SUMA
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="txt_numero_1" placeholder="0.00">
+                    <label for="txt_numero_1">INGRESE NUMERO 1:</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="txt_numero_2" placeholder="0.00">
+                    <label for="txt_numero_2">INGRESE NUMERO 2:</label>
+                </div>
+                <div class="d-grid gap-2 ">
+                    <button type="button" id="btn_sumar" class="btn btn-primary">
+                        SUMAR
+                    </button>
+                </div>
+                <h1 id="txt_resultado_suma">0.00</h1>
+            </div>
+            <div class="col-sm-3">
+                RESTA
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="txt_numero_3" placeholder="0.00">
+                    <label for="txt_numero_3">INGRESE NUMERO 1:</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="txt_numero_4" placeholder="0.00">
+                    <label for="txt_numero_4">INGRESE NUMERO 2:</label>
+                </div>
+                <div class="d-grid gap-2 ">
+                    <button type="button" id="btn_restar" class="btn btn-primary">
+                        RESTAR
+                    </button>
+                </div>
+                <h1 id="txt_resultado_restar">0.00</h1>
+            </div>
+            <div class="col-sm-3">
+                MULTIPLICACION
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="txt_numero_5" placeholder="0.00">
+                    <label for="txt_numero_5">INGRESE NUMERO 1:</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="txt_numero_6" placeholder="0.00">
+                    <label for="txt_numero_6">INGRESE NUMERO 2:</label>
+                </div>
+                <div class="d-grid gap-2 ">
+                    <button type="button" id="btn_multiplicar" class="btn btn-primary">
+                        MULTIPLICACION
+                    </button>
+                </div>
+                <h1 id="txt_resultado_multiplicar">0.00</h1>
+            </div>
+            <div class="col-sm-3">
+                DIVISION
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="txt_numero_7" placeholder="0.00">
+                    <label for="txt_numero_7">INGRESE NUMERO 1:</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="txt_numero_8" placeholder="0.00">
+                    <label for="txt_numero_8">INGRESE NUMERO 2:</label>
+                </div>
+                <div class="d-grid gap-2 ">
+                    <button type="button" id="btn_dividir" class="btn btn-primary">
+                        DIVIDIR
+                    </button>
+                </div>
+                <h1 id="txt_resultado_dividir">0.00</h1>
+            </div>
+        </div>
+    </main>
+    <footer>
+        c 2025 JOSE LEITON
+    </footer>
+</body>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./public/js/sumar.js"></script>
+<script src="./public/js/restar.js"></script>
+<script src="./public/js/dividir.js"></script>
+<script src="./public/js/multiplicar.js"></script>
+</html>

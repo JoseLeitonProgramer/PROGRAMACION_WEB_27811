@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark text-white">
+    <div class="container">
+        <div class="mb-3">
+            <label for="txt_numero" class="form-label">PARES E IMPARES</label>
+            <input type="text" class="form-control" name="" id="txt_numero" aria-describedby="helpId"
+                placeholder="INGRESE EL NUMERO" />
+        </div>
+        <div class="d-grid gap-2">
+            <button type="button" name="" id="btn_calcular" class="btn btn-primary">
+                CALCULAR
+            </button>
+        </div>
+        <div class="d-grid gap-2">
+            <button type="button" name="" id="btn_limpiar" class="btn btn-primary bg-danger m-2">
+                LIMPIAR
+            </button>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                PARES
+                <p id="txt_pares"></p>
+            </div>
+            <div class="col">
+                IMPARES
+                <p id="txt_impares"></p>
+            </div>
+        </div>
+
+
+        <p id="txt_resultado"></p>
+        <a href="./index.html">VOLVER</a>
+    </div>
+</body>
+<script src="./public/js/paresImpares.js"></script>
+
+</html>

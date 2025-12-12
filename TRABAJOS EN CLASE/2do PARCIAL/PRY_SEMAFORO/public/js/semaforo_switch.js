@@ -57,7 +57,7 @@ function mostrar(color) {
     }
 }
 
-if (!seleccionado_primero) txt_resultado.textContent = "POR FAVOR SELECCIONE OPCION";
+if (!seleccionado_primero) txt_resultado.textContent = "POR FAVOR SELECCIONE UN COLOR";
 else mostrar(seleccionado_primero.value);
 
 seleccionado.forEach(radio => radio.addEventListener('change', () => mostrar(radio.value)));

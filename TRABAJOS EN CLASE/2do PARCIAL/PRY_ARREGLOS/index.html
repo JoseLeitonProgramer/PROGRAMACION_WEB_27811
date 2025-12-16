@@ -5,53 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARREGLOS</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 <body class="bg-dark text-white">
-    <header>
-        <h1>CLASE DE ARREGLOS</h1>
-    </header>
-    <main>
 
-        <div class="contain">
-            <h1>ARREGLOS EN JS</h1>
-            <hr>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="formId1" id="txt_nombre_producto" placeholder=""
-                    autofocus>
-                <label for="txt_nombre_producto">Name</label>
-                <div class="d-grid gap-2 pt-2">
-                    <button type="button" name="" id="btn_agregar" class="btn btn-primary bg-success">
-                        AGREGAR
-                    </button>
-                </div>
+    <div class="container">
+        <h1>ARREGLOS EN JS</h1>
+        <hr>
+        <div class="mb-3">
+            <label for="" class="form-label">INGRESE EL PRODUCTO</label>
+            <input type="text" class="form-control" name="formId1" id="Id1" aria-describedby="helpId" placeholder="" />
+            <small id="helpId" class="form-text text-muted">Help text</small>
+            <div class="d-grid gap-2">
+                <button type="button" name="btnId1" id="btn_agregar" class="btn btn-primary">
+                    AGREGAR PRODUCTO
+                </button>
+            </div>
 
-                <!-- Some borders are removed -->
-                <div class="row">
-                    <div class="col">
-                        <ul class="list-group list-group-flush pt-2" id="lista_productos">
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="list-group list-group-flush2 pt-2" id="lista_productos_mayusculas">
-                        </ul>
-                    </div>
-                </div>
-                
+            <div class="row justify-content-center align-items-center g-2">
+                <ul class="col-sm-6 list-group list-group-numbered pt-2" id="lista_productos">
 
+                </ul>
+                <ul class="col-sm-6 list-group list-group-numbered pt-2" id="lista_productos_mayusculas">
+
+                </ul>
 
             </div>
 
         </div>
 
-    </main>
-    <footer>
-        <p>@JOSE LEITON 2025</p>
-    </footer>
+    </div>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./public/js/arreglos.js"></script> -->
+    <script src="./public/js/producto.js"></script>
 </body>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- <script src="./public/js/arreglos.js"></script> -->
-<script src="./public/js/producto.js"></script>
 
 </html>

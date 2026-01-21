@@ -1,21 +1,28 @@
-let promesaNumero = new Promise((resolver, rechazar) => {
-    console.log('*** INICIANDO PROMESA ***');
+async function conexionBaseDatos(usuario, password) {
 
-    setTimeout(() => {
-        let numero = Math.floor(Math.random() * 11); // 0 a 10
-        console.log('NUMERO RANDOM:', numero);
+    console.log('CONECTANDO A LA BASE');
 
-        if (numero <= 5) {
-            resolver('PROMESA RESUELTA');
-        } else {
-            rechazar('PROMESA RECHAZADA');
-        }
-    }, 3000);
+    let promesaConexion = new Promise((resolve, reject) => {
+        setTimeout(() => {
 
-    console.log('EN EJECUCIÓN ... ... .... ... ... ...');
-});
+            const user = 'jileitmonster';
+            const pass = 'jilh12345';
 
-promesaNumero
-    .then(resultado => console.log(resultado))
-    .catch(error => console.log(error))
-    .finally(() => console.log('FINALIZO'));
+            if (usuario === user && password === pass) {
+                resolve('CONEXION EXITOSA');
+            } else {
+                reject('ERROR, IMTENTE NUEVAMENTE');
+            }
+        }, 3000);
+    });
+
+    try {
+        let resultado = await promesaConexion;
+        console.log(resultado);
+    } catch (error) {
+        console.log(error);
+    }
+
+    console.log('FINALIZO EL PROCESO');
+}
+conexionBaseDatos('jileitmonster', 'jilh12345');

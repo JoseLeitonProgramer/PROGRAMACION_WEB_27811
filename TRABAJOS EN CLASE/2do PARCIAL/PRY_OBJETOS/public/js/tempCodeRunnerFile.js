@@ -1,4 +1,4 @@
-async function conexionBaseDatos(usuario, password) {
+function conexionBaseDatos(usuario, password) {
 
     console.log('CONECTANDO A LA BASE');
 
@@ -11,18 +11,22 @@ async function conexionBaseDatos(usuario, password) {
             if (usuario === user && password === pass) {
                 resolve('CONEXION EXITOSA');
             } else {
-                reject('ERROR, IMTENTE NUEVAMENTE');
+                reject('ERROR, INTENTE NUEVAMENTE');
             }
+
         }, 3000);
     });
 
-    try {
-        let resultado = await promesaConexion;
-        console.log(resultado);
-    } catch (error) {
-        console.log(error);
-    }
-
-    console.log('FINALIZO EL PROCESO');
+    promesaConexion
+        .then(resultado => {
+            console.log(resultado);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+        .finally(() => {
+            console.log('FINALIZO EL PROCESO');
+        });
 }
+
 conexionBaseDatos('jileitmonster', 'jilh12345');

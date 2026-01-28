@@ -4,70 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLASE DE OBJETOS</title>
+    <title>JOSE LEITON CRUD USUARIOS</title>
+
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body class="bg-dark text-white">
-    <header>
-        <h1>CLASE DE OBJETOS</h1>
+
+    <header class="text-center p-3">
+        <h1>CRUD DE USUARIOS</h1>
     </header>
-    <main>
 
-        <div class="container">
-            <h1>OBJETOS.JS</h1>
+    <main class="container">
+
+        <div class="card bg-secondary p-4 mb-4">
+            <h4>Formulario Usuario</h4>
             <hr>
-            <div id="datos_persona"></div>
+
             <div class="mb-3">
-                <label for="txt_nombres" class="form-label">NOMBRES</label>
-                <input type="text" class="form-control" name="" id="txt_nombres" placeholder="" />
-            </div>
-            <div class="mb-3">
-                <label for="txt_apellidos" class="form-label">APELLIDOS</label>
-                <input type="text" class="form-control" name="" id="txt_apellidos" placeholder="" />
-            </div>
-            <div class="mb-3">
-                <label for="txt_edad" class="form-label">EDAD</label>
-                <input type="number" class="form-control" name="" id="txt_edad" placeholder="" />
+                <label class="form-label">USERNAME</label>
+                <input type="text" class="form-control" id="txt_username">
             </div>
 
             <div class="mb-3">
-                <label for="txt_estatura" class="form-label">ESTATURA</label>
-                <input type="number" class="form-control" name="" id="txt_estatura" placeholder="" />
+                <label class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="txt_email">
             </div>
 
             <div class="mb-3">
-                <label for="sel_es_estudiante" class="form-label">ES PROFESOR</label>
-                <select name="" id="sel_es_estudiante">
-                    <option value="" selected disabled>SELECCIONE</option>
-                    <option value="SI">SI</option>
-                    <option value="NO">NO</option>
-                </select>
-            </div>
-
-            <p>ES MAYOR DE EDAD ?</p>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="txt_mayor" />
-                <label class="form-check-label" for="txt_mayor">SI</label>
+                <label class="form-label">PASSWORD</label>
+                <input type="password" class="form-control" id="txt_password">
             </div>
 
             <div class="d-grid gap-2">
-                <button type="button" name="" id="btn_actualizar" class="btn btn-primary">
-                    ACTUALIZAR
-                </button>
+                <button class="btn btn-success" onclick="crearUsuario()">CREAR</button>
+                <button class="btn btn-warning" onclick="actualizarUsuario()">ACTUALIZAR</button>
+                <button class="btn btn-danger" onclick="eliminarUsuario()">ELIMINAR</button>
+                <button class="btn btn-info" onclick="obtenerUsuarios()">LISTAR</button>
             </div>
-
-
         </div>
 
+        <div class="card bg-black p-3">
+            <h4>Lista de Usuarios</h4>
 
+            <table class="table table-dark table-striped mt-3">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>USERNAME</th>
+                        <th>EMAIL</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaUsuarios">
+
+                </tbody>
+            </table>
+        </div>
 
     </main>
-    <footer>
+
+    <footer class="text-center p-3">
         <p>@JOSE LEITON 2025</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./public/js/objeto.js"></script>
+    <script src="./public/js/backendUsuarios.js"></script>
+
 </body>
 
 </html>

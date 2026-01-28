@@ -77,3 +77,7 @@ promesaDado
     .catch(error => console.log(error))
     .finally(() => console.log('FINALIZO'));
 
+
+// con esta pagina vamos a najeras lo de apis desarrollar un crud utilizando esta pagina https://fakestoreapi.com/docs#tag/Users/operation/getAllUsers
+    //sobre usuarios hacer la finalidad es manejar (promesas) adaptar esto al callback que hace la promesa
+// https://sweetalert2.github.io/ 
